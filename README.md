@@ -39,11 +39,11 @@ JSL02-2025-main/
 
 ### 💻 Desktop View
 
-![Desktop Screenshot](explainer-images/Desktop.png)
+![Desktop Screenshot](assets/Desktop.png)
 
 ### 📱 Mobile View
 
-![Mobile Screenshot](explainer-images/Mobile.png)
+![Mobile Screenshot](assets/Mobile.png)
 
 ## ⚙️ Setup Instructions
 
