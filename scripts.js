@@ -25,4 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
       status: taskStatus,
     };
   }
-})
+    // Collect task details for two tasks
+  const firstTask = getTaskDetails(1);
+  const secondTask = getTaskDetails(2);
+
+  const allTasks = [firstTask, secondTask];
+
+  const completedTasks = allTasks.filter((task) => task.status === "done");
+
+  if (completedTasks.length > 0) {
+    completedTasks.forEach((task) => {
+      console.log(`Title: "${task.title}", Status: "done"`);
+    });
+  } else {
+    console.log("No tasks completed, let's get to work!");
+  }
+});
+
