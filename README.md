@@ -1,51 +1,49 @@
-# 🗂️ Kanban Task Management
+# 🗂️ Kanban Task Management App
 
 ## 🚀 Project Overview
 
-**Kanban Task Management** is a responsive web-based application that allows users to organize and visualize their tasks across three workflow stages: `TODO`, `DOING`, and `DONE`. The project combines clean UI with interactive prompts to guide users through task creation and progress tracking.
+**Kanban Task Management App** is a responsive web-based application that helps users visually organize and track their tasks through three workflow stages: `TODO`, `DOING`, and `DONE`. The app features a clean, modern UI and uses interactive browser prompts to gather task data, making it simple and intuitive to get started.
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – Structure and semantic layout
-- **CSS3** – Responsive design with custom properties
-- **JavaScript (ES6)** – Dynamic interaction, logic, and validation
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
 - **Google Fonts** – Plus Jakarta Sans for modern typography
 - **Favicon Assets** – SVG-based icons for branding
 
 ## ✨ Features
 
-- ✅ Responsive Kanban board with three workflow columns
-- ✅ Sidebar with styled navigation and branding
+- ✅ Fully responsive Kanban board with three workflow columns
+- ✅ Sidebar with custom branding and navigation layout
 - ✅ Prompt-based entry of two tasks: title, description, and status
 - ✅ Accepts status input in any case (`TODO`, `Doing`, `DONE`, etc.)
 - ✅ Alerts and re-prompts for invalid statuses until corrected
 - ✅ Separate variable storage for both tasks
-- ✅ Displays only tasks with status `"done"` in the console
-- ✅ Encouraging message when no tasks are marked as `"done"`
-- ✅ Clean, accessible, and maintainable code with comments
+- ✅ Console displays only tasks marked `"done"`
+- ✅ Friendly message if no tasks are completed
+- ✅ Clean, semantic, and well-commented codebase
 
 ## 📁 File Structure
 
-kanban-task-app/
-├── index.html # Main HTML file
-├── styles.css # CSS for layout and design
-├── scripts.js # JavaScript task logic
-├── assets/ # Logos and icons
-└── README.md # Project documentation
+```
+JSL02-2025-main/
+├── index.html         # Main HTML file
+├── styles.css         # CSS for layout and responsive design
+├── scripts.js         # JavaScript task logic and interactions
+├── assets/            # Logos, icons, and screenshots
+└── README.md          # Project documentation
+```
 
 ## 📸 Screenshots
 
 ### 💻 Desktop View
 
-![Desktop Screenshot](assets/screenshots/kanban-desktop.png)
+![Desktop Screenshot](explainer-images/Desktop.png)
 
 ### 📱 Mobile View
 
-![Mobile Screenshot](assets/screenshots/kanban-mobile.png)
-
-
-
----
+![Mobile Screenshot](explainer-images/Mobile.png)
 
 ## ⚙️ Setup Instructions
 
@@ -55,38 +53,45 @@ kanban-task-app/
    git clone https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL02-2025.git
    ```
 
-2. **Navigate into the Project:**
+2. **Navigate into the Project Directory**:
 
    ```bash
    cd VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL02-2025
    ```
 
-3. **Open the Application:**
-   Open `index.html` in your web browser, or use a Live Server extension for auto-refresh.
+3. **Launch the App**:
+   - Open `index.html` in your browser manually, **or**
+   - Use a Live Server extension in your code editor for auto-refresh
 
-💡 No installations or dependencies required – everything runs in the browser.
+💡 _No installation or dependencies required – everything runs in the browser._
 
 ## 🧑‍💻 Usage Instructions
 
-### 🟢 Initial Launch
+### 🟢 On Initial Load
 
-1. Load the site in your browser.
-2. The Kanban layout appears after entering the task prompts.
+1. Open the application in your browser.
+2. Two browser prompts will appear asking for task details.
 
-### 📝 Task Entry
+### 📝 Entering a Task (Twice)
 
-You will be prompted twice (for two tasks). For each task:
+Each task prompt will ask for:
 
-- Enter the title (e.g., "Fix login issue")
-- Enter the description (e.g., "Bug in production login flow")
-- Enter the status:
-  - Valid options: todo, doing, or done (case-insensitive)
-  - If input is invalid, you'll be alerted and asked again
+- A **title** (e.g., `"Fix login issue"`)
+- A **description** (e.g., `"Bug in production login flow"`)
+- A **status**:
+  - Valid options: `todo`, `doing`, `done` (case-insensitive)
+  - Invalid inputs will trigger an alert and re-prompt
 
 ### 🖥️ Console Output
 
-- If any task is marked as "done", its title and status will appear in the console.
-- If no task is marked "done", you'll see:
+- If any task is marked `"done"`, its title and status will be printed:
+
+  ```
+  Title: "Write report", Status: "done"
+  ```
+
+- If no tasks are completed, you'll see:
+
   ```
   No tasks completed, let's get to work!
   ```
@@ -95,54 +100,56 @@ You will be prompted twice (for two tasks). For each task:
 
 ### ✅ Example: One Task Done
 
-Input via Prompt:
+**Input via Prompt:**
 
 - Task 1:
-  - Title: Write report
-  - Description: Quarterly summary
-  - Status: DONE
+  - Title: `Write report`
+  - Description: `Quarterly summary`
+  - Status: `DONE`
 - Task 2:
-  - Title: Fix navbar
-  - Description: Issue in mobile view
-  - Status: todo
+  - Title: `Fix navbar`
+  - Description: `Issue in mobile view`
+  - Status: `todo`
 
-Console Output:
+**Console Output:**
 
 ```
 Title: "Write report", Status: "done"
 ```
 
+---
+
 ### ❌ Example: No Tasks Done
 
-Input via Prompt:
+**Input via Prompt:**
 
 - Task 1:
-  - Title: Update fonts
-  - Status: TODO
+  - Title: `Update fonts`
+  - Status: `TODO`
 - Task 2:
-  - Title: Test animation
-  - Status: DOING
+  - Title: `Test animation`
+  - Status: `DOING`
 
-Console Output:
+**Console Output:**
 
 ```
 No tasks completed, let's get to work!
 ```
 
-## 🧾 Future Improvements
+## 💡 Future Improvements
 
-- UI-based task creation instead of prompts
-- LocalStorage or database persistence
-- Drag-and-drop task movement
-- Edit/delete task functionality
-- Dark mode toggle
+- Replace prompts with form-based UI for better user experience
+- Add drag-and-drop functionality for tasks
+- Store tasks using LocalStorage or a database
+- Enable task editing and deletion
+- Add a dark mode toggle
 
 ## ✍️ Author
 
-Vanessa Baart
-
-GitHub Repository
+**Vanessa Baart**  
+🔗 [GitHub Repository](https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_JSL02-2025)
 
 ## 📄 License
 
-This solution code is provided for **educational use only**.
+This project is provided for **educational use only**.  
+© 2025 Vanessa Baart. All rights reserved.
